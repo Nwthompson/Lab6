@@ -10,3 +10,16 @@ def encode(pw):
 pw = str(input('Enter Number:'))
 
 print(encode(pw))
+
+def decode(epw):
+    pw = ""
+    for x in range(0, len(epw)):
+        if epw[x] == "2":
+            pw += "9"
+        elif epw[x] == "1":
+            pw += "8"
+        elif epw[x] == "0":
+            pw += "7"
+        else:
+            pw += str(int(epw[x])-3)
+    return pw
