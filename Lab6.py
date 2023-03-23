@@ -22,4 +22,3 @@ def decode(epw):
             pw += "7"
         else:
             pw += str(int(epw[x])-3) #subtracts 3 from encoded password.
-    return pw
