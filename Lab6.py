@@ -13,7 +13,7 @@ print(encode(pw))
 
 def decode(epw):
     pw = ""
-    for x in range(0, len(epw)): # from 0 to length of the encoded password.
+    for x in range(0, len(epw)): # from 0 to length of the encoded password
         if epw[x] == "2":
             pw += "9"
         elif epw[x] == "1":
